@@ -47,6 +47,12 @@ function showImage(){
 }
 
 function play(){
+    // Remueve muted y reproduce el audio si está silenciado
+    var audio = document.getElementById('myAudio');
+    if(audio && audio.muted){
+        audio.muted = false;
+        audio.play();
+    }
 	if(t == 0){
 		myImage.setAttribute("src", "");
 		myTxt.innerHTML = "";
