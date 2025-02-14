@@ -11,7 +11,7 @@
   </head>
 
   <body style="margin: 0px">
-    <audio autoplay loop>
+    <audio loop id="myAudio" controls>
       <source src="./music/musica.mp3" type="audio/mpeg" />
       Tu navegador no soporta el audio.
     </audio>
@@ -84,6 +84,12 @@
       ];
       var len = imageArray.length;
       var t = 0;
+
+      // Alternativa: reproducir el audio tras una acción del usuario
+      document.getElementById('button').addEventListener('click', function(){
+          var audio = document.getElementById('myAudio');
+          audio.play();
+      });
     </script>
 
     <script type="text/javascript" src="./js/stars.js"></script>
