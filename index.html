@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta charset="UTF-8" />
+    <title>Felices 4 años juntos mi vida</title>
+    <link rel="stylesheet" type="text/css" href="./css/format.css" />
+  </head>
+
+  <body style="margin: 0px">
+    <audio autoplay loop>
+      <source src="./music/musica.mp3" type="audio/mpeg" />
+      Tu navegador no soporta el audio.
+    </audio>
+    <canvas></canvas>
+    <div id="imgTxt">
+      <span id="Txt"></span> <br />
+      <span id="tmp"></span>
+      <img id="img" src="" />
+    </div>
+    <div id="heartTxt">
+      <span id="clickMe">¡Haz clic!</span>
+      <div id="heart">
+        <button id="button" onclick="play()"></button>
+      </div>
+    </div>
+    <div id="content">
+      <h2 id="together">Gracias por acompañarme durante</h2>
+      <div id="timer">
+        <b id="d"></b> Días <b id="h"></b> Horas <b id="m"></b> Minutos
+        <b id="s"></b> Segundos
+      </div>
+    </div>
+
+    <div id="typeDiv">
+      <span id="txt1"></span> <br />
+      <span id="txt2"></span>
+    </div>
+
+    <script>
+      var ok = 0;
+      var flag = 1;
+      var myImage = document.getElementById("img");
+      var myTxt = document.getElementById("Txt");
+      var imageArray = [
+        "pic/pic1.png",
+        "pic/pic2.png",
+        "pic/pic3.png",
+        "pic/pic4.png",
+        "pic/pic5.png",
+        "pic/pic6.png",
+        "pic/pic7.png",
+        "pic/pic8.png",
+        "pic/pic9.png",
+        "pic/pic10.png",
+        "pic/pic11.png",
+        "pic/pic12.png",
+        "pic/pic13.png",
+        "pic/pic14.png",
+        "pic/pic15.png",
+        "pic/pic16.png",
+      ];
+      var imageIndex = 0;
+      var txtArray = [
+        "Oh, meu amor, sua presença ilumina minha existência com ternura e luz.",
+        "Cada dia ao seu lado é um poema de gratidão, um hino ao amor que nos une.",
+        "No auge da minha conquista, sua força me elevou – sou imensamente grato por estar presente na minha formatura.",
+        "Em cada verso da vida, seu amor transforma e enriquece minha jornada.",
+        "Não há palavras que expressem a imensidão da minha gratidão pelos momentos inesquecíveis que compartilhamos.",
+        "Você se tornou minha família, meu refúgio e razão; agradeço todos os dias por esse laço eterno.",
+        "Seu amor transforma lágrimas em sorrisos e sonhos em realidade.",
+        "Ao seu lado, encontro inspiração, conforto e a beleza de um amor que transcende o tempo.",
+        "Nos momentos mais escuros, seu carinho acendeu a luz que guia meu coração.",
+        "A cada aurora, agradeço por você ser a melodia que embala meus dias.",
+        "O amor que compartilhamos é um tesouro que enriquece minha alma e faz a vida valer cada instante.",
+        "Cada abraço seu é um verso de gratidão que ecoa na eternidade do meu ser.",
+        "Com você, aprendi que a verdadeira felicidade reside na cumplicidade e na entrega mútua.",
+        "Sua voz suave e olhar sincero são lembretes de que o amor verdadeiro é inabalável.",
+        "Você preencheu minha vida com cores e vivências incomparáveis, e sou eternamente grato por cada instante.",
+        "Em cada curva do tempo, não há forma de agradecer todo o amor e os momentos espetaculares que vivemos juntos."
+      ];
+      var len = imageArray.length;
+      var t = 0;
+    </script>
+
+    <script type="text/javascript" src="./js/stars.js"></script>
+    <script type="text/javascript" src="./js/typeWriter.js"></script>
+    <script type="text/javascript" src="./js/date.js"></script>
+    <script type="text/javascript" src="./js/playImg.js"></script>
+  </body>
+</html>
