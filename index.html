@@ -11,10 +11,21 @@
   </head>
 
   <body style="margin: 0px">
+    <!-- Quitamos o comentamos el reproductor de audio nativo -->
+    <!--
     <audio autoplay loop>
       <source src="./music/musica.mp3" type="audio/mpeg" />
       Tu navegador no soporta el audio.
     </audio>
+    -->
+    <!-- Reproductor de audio personalizado -->
+    <div id="audioPlayer">
+      <button id="playPauseBtn">Dale click para la musiquita <3 </button>
+      <div id="progressBar">
+        <div id="progress"></div>
+      </div>
+    </div>
+    
     <canvas></canvas>
     <div id="imgTxt">
       <span id="Txt"></span> <br />
@@ -90,5 +101,7 @@
     <script type="text/javascript" src="./js/typeWriter.js"></script>
     <script type="text/javascript" src="./js/date.js"></script>
     <script type="text/javascript" src="./js/playImg.js"></script>
+    <!-- Nuevo archivo para el audio player -->
+    <script type="text/javascript" src="./js/audioPlayer.js"></script>
   </body>
 </html>
